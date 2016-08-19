@@ -1,0 +1,157 @@
+@import 
+url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+body { 
+	box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+iframe, img {
+	align="center";
+}
+
+/* STRUCTURE */
+
+#wrapPage {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+h1 {
+	height: 100px;
+	padding: 0 15px;
+	color: white;
+	background-color: black;
+	text-align:  center;
+	font-weight: bolder;
+	font-size: 3em;
+}
+#leftColumn {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+	align-content: center;
+}
+
+#middleColumn {
+	width: 294px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#thirdColumn {
+	width: 270px;
+	padding: 5px 15px;
+	float: left;
+}
+table {
+	color: white;
+	background-color: #666666;
+}
+.tableLink {
+	color: yellow;
+	font-style: 
+}
+th {
+	font-weight: bolder;
+	font-size: 2em;
+}
+td {
+	text-align:center;
+	color: white;
+
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#wrapPage {
+		width: 94%;
+	}
+	#leftColumn {
+		width: 41%;
+		padding: 1% 4%;
+		background-color: yellow;
+	}
+	#middleColumn {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#thirdColumn {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+		/*background-color: yellow;*/
+	}
+
+	h1, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#leftColumn {
+		width: auto;
+		float: none;
+
+	}
+	
+	#middleColumn {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+		background-color: yellow;
+
+	}
+	
+	#thirdColumn {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		height: auto;
+		font-size: 2em;
+	}
+	
+
+}
+
+
+#leftColumn {
+	background: #f8f8f8;
+}
+#thirdColumn {
+	background: #f0efef;
+}
+header, #leftColumn, #middleColumn, #rightColumn {
+	margin-bottom: 5px;
+}
+
+#wrapPage, header, #leftColumn, #middleColumn, #rightColumn footer {
+	border: solid 1px #ccc;
+}
